@@ -29,7 +29,9 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
     '127.0.0.1:8000',
     '192.168.30.114',
-    'mybackend-4jjq.onrender.com',  
+    'mybackend-4jjq.onrender.com',
+    'https://mybackend-4jjq.onrender.com',
+
 ]
 
 
@@ -134,3 +136,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://mybackend-4jjq.onrender.com",
+]
